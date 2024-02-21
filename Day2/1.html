@@ -1,0 +1,112 @@
+<!Doctype Html>  
+<Html>     
+<Head>      
+<Title>     
+    My Website
+</Title>  
+</Head>  
+<Body> 
+<style type=text/css>   
+body   
+{  
+height: 125vh;  
+margin-top: 80px;  
+padding: 30px;  
+background-size: cover;  
+font-family: sans-serif;  
+}  
+header {  
+background-color: rgb(251, 255, 0);  
+position: fixed;  
+left: 0;  
+right: 0;  
+top: 5px;  
+height: 50px;  
+display: flex;  
+align-items: center;  
+box-shadow: 0 0 25px 0 black;  
+}  
+header * {  
+display: inline;  
+}  
+header li {  
+margin: 20px;  
+}  
+header li a {  
+color: rgb(255, 0, 179);  
+text-decoration: none;  
+}  
+</style>   
+</Head>  
+<Body>  
+    <h1>Your Dream  Free Job Portal</h1>
+      <p> You can fined more job here and apply free</p> 
+<header>  
+<nav>  
+<ul>  
+<li>  
+<a href="#"> Home </a>  
+</li>  
+<li>  
+<a href="#"> About </a>  
+</li>  
+<li>  
+<a href="#"> Contact </a>  
+</li>  
+<li> <a href="#"> Terms of use </a>  
+</li>  
+<li>  
+<a href="#"> Join Us </a>  
+</li>  
+</ul>  
+</nav>  
+</header>  
+  
+</script>
+</Body>   
+</Html>  
+
+
+<!Doctype Html>  
+<Html>     
+<Head>      
+<Title>     
+    My Website
+</Title>  
+</Head>  
+<Body> 
+
+
+    
+    
+        
+    <script>
+        function validateDataForm() {
+           const usernameValidate = document.getElementById("email");
+              const emailValidate = document.getElementById("email");
+             
+              const emailValidateRegex = /^\S+@\S+\.\S+$/;
+              if (usernameValidate.value === "") {
+              alert("Enter a valid username");
+                  return false;
+              }
+              if (!emailValidateRegex.test(emailValidate.value)) {
+                  alert("Enter a valid email");
+                  return false;
+                           
+           }
+              return true;
+          }
+      </script>
+     <form method="post" action="data-submit.php">
+          <br />
+        <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required> <br /> <label for="password">Password:</label>
+       
+        <button type="post" onclick="return validateDataForm()">Submit</button> 
+           
+          
+    </form>
+    
+</Body>
+</Html>
