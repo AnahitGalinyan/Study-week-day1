@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+  </head>
+  <body>
+    <button id="clickMeButton">Click me</button>
+    <div id="clickCountDisplay"></div>
+
+    <script>
+      const clickMeButton = document.getElementById("clickMeButton");
+      const clickCountDisplay = document.getElementById("clickCountDisplay");
+      let clickCount = 0;
+
+      clickMeButton.addEventListener("click", () => {
+        clickCount++;
+        clickCountDisplay.textContent = "Button has been clicked " + clickCount + " time(s).";
+      });
+    </script>
+  </body>
+</html>

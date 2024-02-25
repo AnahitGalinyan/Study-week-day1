@@ -1,0 +1,42 @@
+  
+<button id="redButton">Red</button>
+<button id="greenButton">Green</button>
+<button id="blueButton">Blue</button>
+<button id="yellowButton">Yellow</button>
+<button id="purpleButton" height = 150>Purple </button>
+
+<div id="selectedColorDisplay"></div>
+<script>
+
+const redButton = document.getElementById("redButton");
+const greenButton = document.getElementById("greenButton");
+const blueButton = document.getElementById("blueButton");
+const yellowButton = document.getElementById("yellowButton");
+const purpleButton = document.getElementById("purpleButton");
+const selectedColorDisplay = document.getElementById("selectedColorDisplay");
+
+redButton.addEventListener("click", () => {
+  selectedColorDisplay.textContent = "Selected color: Red";
+  selectedColorDisplay.style.backgroundColor = "red";
+});
+
+greenButton.addEventListener("click", () => {
+  selectedColorDisplay.textContent = "Selected color: Green";
+  selectedColorDisplay.style.backgroundColor = "green";
+});
+
+blueButton.addEventListener("click", () => {
+  selectedColorDisplay.textContent = "Selected color: Blue";
+  selectedColorDisplay.style.backgroundColor = "blue";
+});
+
+yellowButton.addEventListener("click", () => {
+  selectedColorDisplay.textContent = "Selected color: Yellow";
+  selectedColorDisplay.style.backgroundColor = "yellow";
+});
+
+purpleButton.addEventListener("click", () => {
+  selectedColorDisplay.textContent = "Selected color: Purple";
+  selectedColorDisplay.style.backgroundColor = "purple";
+});
+</script>
