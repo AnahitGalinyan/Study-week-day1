@@ -1,0 +1,11 @@
+<input type="text" id="myInput">
+<button onclick="displayText()">Display</button>
+<p id="myParagraph"></p>
+
+<script>
+function displayText() {
+  let input = document.getElementById("myInput");
+  let paragraph = document.getElementById("myParagraph");
+  paragraph.textContent = input.value;
+}
+</script>
